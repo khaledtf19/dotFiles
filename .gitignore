@@ -1,0 +1,11 @@
+# Ignore everything:
+*
+
+# Except
+!.gitignore
+!/i3
+!/nvim
+!/alacritty
+!/flameshot
+!/picom
+!/polybar

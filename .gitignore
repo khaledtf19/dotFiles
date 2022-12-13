@@ -4,9 +4,9 @@
 # Except
 !.git
 !.gitignore
-!/i3/
-!/nvim/
-!/alacritty/
-!/flameshot/
-!/picom/
-!/polybar/
+!i3/**
+!nvim/**
+!alacritty/**
+!flameshot/**
+!picom/**
+!polybar/**

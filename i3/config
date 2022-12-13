@@ -33,9 +33,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen --lock
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec_always --no-startup-id picom -b
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always "setxkbmap -layout us,ar"
+exec_always "setxkbmap -option 'grp:win_space_toggle'"
 
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id ~/.config/polybar/launch.sh --grayblocks
+ 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/volume-max-100.sh up 5 && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/volume-max-100.sh down 5 && $refresh_i3status
@@ -66,7 +69,7 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
+# alternaively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -218,3 +221,5 @@ bindsym $mod+p exec flameshot gui
 
 # i3lock
 bindsym Mod4+l exec --no-startup-id betterlockscreen --lock
+
+

@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
-   use {
+    use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
@@ -29,19 +29,6 @@ return require('packer').startup(function(use)
        -- or                            , branch = '0.1.x',
        requires = { {'nvim-lua/plenary.nvim'} }
     }
-
-    use ({
-      "hrsh7th/nvim-cmp",
-
-      requires = {
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-nvim-lua",
-        "L3MON4D3/LuaSnip", -- may very based on config
-        "onsails/lspkind-nvim",
-      }
-    })
 
     use 'brenoprata10/nvim-highlight-colors'
     

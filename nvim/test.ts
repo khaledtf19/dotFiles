@@ -8,4 +8,4 @@ const lol = ({lol:string}) => {
 }
 
  
-lol()
+

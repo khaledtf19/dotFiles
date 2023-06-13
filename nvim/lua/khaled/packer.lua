@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
   use({
     "jose-elias-alvarez/null-ls.nvim",
     config = function()
-        require("null-ls").setup()
+      require("null-ls").setup()
     end,
     requires = { "nvim-lua/plenary.nvim" },
-})
+  })
 
   use { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
@@ -37,24 +37,24 @@ return require('packer').startup(function(use)
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
-      },
+    },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
-     }
+  }
 
- 
-    use {
-      
-      'nvim-telescope/telescope.nvim', tag = '0.1.0',
-       -- or                            , branch = '0.1.x',
-       requires = { {'nvim-lua/plenary.nvim'} }
-    }
 
-    use 'brenoprata10/nvim-highlight-colors'
-     use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-      }   
-      use { -- Autocompletion
+  use {
+
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
+  use 'brenoprata10/nvim-highlight-colors'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use { -- Autocompletion
     'hrsh7th/nvim-cmp',
     requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
   }
@@ -65,7 +65,7 @@ return require('packer').startup(function(use)
     end,
   }
   use {
-	"windwp/nvim-autopairs",
+    "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
-}
-  end)
+  }
+end)

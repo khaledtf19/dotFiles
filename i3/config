@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Background
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
@@ -35,7 +35,7 @@ exec --no-startup-id source ~/.fehbg
 exec --no-startup-id nm-applet
 
 exec_always "setxkbmap -layout us,ar"
-exec_always "setxkbmap -option 'grp:win_space_toggle'"
+exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id ~/.config/polybar/launch.sh --grayblocks
@@ -221,6 +221,6 @@ smart_gaps on
 bindsym $mod+p exec flameshot gui
 
 # i3lock
-bindsym Mod4+l exec --no-startup-id betterlockscreen --lock
+bindsym Mod4+Escape exec --no-startup-id betterlockscreen --lock
 
 

@@ -60,7 +60,8 @@ tooltip {
 #workspaces,
 #tray,
 #backlight,
-#cpu {
+#cpu,
+#language {
   background: #1e1e2e;
   padding: 0px 10px;
   margin: 3px 0px;
@@ -128,9 +129,11 @@ tooltip {
 
 #pulseaudio.microphone {
   color: #cba6f7;
-  border-radius: 0px 10px 10px 0px;
   border-left: 0px;
   border-right: 0px;
+}
+#language {
+  border-radius: 0px 10px 10px 0px;
   margin-right: 5px;
 }
 

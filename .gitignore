@@ -11,3 +11,12 @@
 !picom/**
 !polybar/**
 !hypr/**
+!kitty/**
+!lvim/**
+!waybar/**
+!rofi/**
+!Thunar/**
+!swaylock/**
+!wlogout/**
+!dunst/**
+
